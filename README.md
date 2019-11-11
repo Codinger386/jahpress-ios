@@ -4,8 +4,8 @@ This app is available in the app store: https://apps.apple.com/us/app/jahpress/i
 
 ### Project Setup ###
 
-* èxecute `carthage update --platform iOS`
-* put the following frameworks in the Frameworks folder:
+* Execute `carthage update --platform iOS`
+* Put the following frameworks in the Frameworks folder:
     * Bolts.framework
     * FIRAnalyticsConnector.framework
     * FirebaseAnalytics.framework
