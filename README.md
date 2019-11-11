@@ -1,5 +1,7 @@
 # README #
 
+This app is available in the app store: https://apps.apple.com/us/app/jahpress/id1444504931.
+
 ### Project Setup ###
 
 * èxecute `carthage update --platform iOS`
@@ -18,6 +20,7 @@
     * GoogleToolboxForMac.framework
     * GoogleUtilities.framework
     * nanopb.framework
+
 For more information check: https://firebase.google.com/docs/ios/setup and https://github.com/muhku/FreeStreamer
 
 This project requires a Shoutcast API key which needs to be added in JahPress.xcconfig.
