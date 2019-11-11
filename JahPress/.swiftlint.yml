@@ -1,0 +1,38 @@
+line_length:
+  warning: 190
+  ignores_comments: true
+
+colon:
+  apply_to_dictionaries: false
+
+cyclomatic_complexity:
+    warning: 20
+
+identifier_name:
+  min_length:
+    warning: 1
+  min_length:
+    error: 1
+  max_length:
+    warning: 60
+  excluded:   # excluded via string array
+    - qa    
+    - QA
+    - id
+    - i
+    - iD
+  allowed_symbols:
+    - _
+
+vertical_whitespace:
+    max_empty_lines: 5
+
+function_body_length:
+    warning: 80
+    error: 150
+
+disabled_rules:
+    - identifier_name
+
+excluded: # paths to ignore during linting. overridden by `included`.
+  - Carthage

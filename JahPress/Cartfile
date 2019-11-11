@@ -1,0 +1,6 @@
+github "Quick/Nimble" ~> 8.0
+github "mxcl/PromiseKit" ~> 6.1
+github "cesarferreira/SwiftEventBus" == 3.0.1
+github "DaveWoodCom/XCGLogger" ~> 7.0
+github "facebook/facebook-sdk-swift" "master"
+github "Raizlabs/Anchorage" ~> 4.3

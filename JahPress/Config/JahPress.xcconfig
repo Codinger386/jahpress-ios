@@ -1,0 +1,31 @@
+//
+//  JahPress.xcconfig
+//  JahPress
+//
+//  Created by Benjamin Ludwig on 17.12.17.
+//  Copyright © 2017 Benjamin Ludwig. All rights reserved.
+//
+
+// Logger
+LOG_SHOW_LEVEL = 1
+LOG_SHOW_IDENTIFIER = 0
+LOG_SHOW_FILE = 1
+LOG_SHOW_LINE = 1
+LOG_SHOW_FUNCTION = 1
+LOG_SHOW_THREAD = 0
+LOG_SHOW_DATE = 1
+LOG_SHOW_PICTOGRAM = 1
+
+// Debug activity mode
+SHOUTCAST_API = TODO
+
+DEBUG_ACTIVITY_MODE = default
+
+APP_STORE_ID = 1444504931
+
+AD_MOB_APP_ID = TODO
+AD_MOB_BANNER_ID = TODO
+
+FACEBOOK_APP_ID = TODO
+
+FIRE_BASE_ID = TODO

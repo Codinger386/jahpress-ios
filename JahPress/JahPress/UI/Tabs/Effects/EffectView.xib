@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EffectView" customModule="JahPress" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPV-jc-6D5">
+                    <rect key="frame" x="6" y="27" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="rd0-hS-YMJ">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c59-Q6-9Np">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <connections>
+                        <action selector="effectButton:" destination="iN0-l3-epB" eventType="touchDown" id="Bvg-1m-kYw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10103352868541664" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rd0-hS-YMJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2wn-iQ-lOf"/>
+                <constraint firstItem="VPV-jc-6D5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4pR-Tn-h3n"/>
+                <constraint firstItem="VPV-jc-6D5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="A1M-RD-wmb"/>
+                <constraint firstItem="rd0-hS-YMJ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="EcO-06-AF6"/>
+                <constraint firstItem="c59-Q6-9Np" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="FBr-Qc-Fm4"/>
+                <constraint firstItem="c59-Q6-9Np" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FT6-rj-P1B"/>
+                <constraint firstItem="rd0-hS-YMJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Gjr-fr-X7T"/>
+                <constraint firstItem="rd0-hS-YMJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Pcz-Hs-fPf"/>
+                <constraint firstItem="c59-Q6-9Np" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bvm-45-R9N"/>
+                <constraint firstItem="c59-Q6-9Np" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ieh-qw-gHL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VPV-jc-6D5" secondAttribute="trailing" constant="6" id="kvj-GU-IwU"/>
+                <constraint firstItem="VPV-jc-6D5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="shA-g5-r0D"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="gradient" destination="rd0-hS-YMJ" id="CvC-3r-ub9"/>
+                <outlet property="titleLabel" destination="VPV-jc-6D5" id="xle-4v-01e"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient" width="256" height="256"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+//
+//  JahPress.xcconfig
+//  JahPress
+//
+//  Created by Benjamin Ludwig on 17.12.17.
+//  Copyright © 2017 Benjamin Ludwig. All rights reserved.
+//
+
+// Logger
+LOG_SHOW_LEVEL = 1
+LOG_SHOW_IDENTIFIER = 0
+LOG_SHOW_FILE = 1
+LOG_SHOW_LINE = 1
+LOG_SHOW_FUNCTION = 1
+LOG_SHOW_THREAD = 0
+LOG_SHOW_DATE = 1
+LOG_SHOW_PICTOGRAM = 1
+
+// Debug activity mode
+DEBUG_ACTIVITY_MODE = default
+
+ENVIRONMENT = QA
+
+APP_NAME = JP QA
+PRODUCT_BUNDLE_IDENTIFIER = de.freundederinteraktion.jahpress-qa
