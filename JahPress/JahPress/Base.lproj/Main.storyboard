@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +21,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGn-D0-2d5">
-                                <rect key="frame" x="0.0" y="80" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="554"/>
                             </view>
                             <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-QJ-CSw">
                                 <rect key="frame" x="60" y="156" width="255" height="255"/>
@@ -32,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STy-T3-r60" userLabel="Player Container View">
-                                <rect key="frame" x="0.0" y="20" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2nu-UL-5w7"/>
@@ -42,7 +40,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCv-Su-aLr" userLabel="Content Container View">
-                                <rect key="frame" x="0.0" y="80" width="375" height="583"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="603"/>
                                 <connections>
                                     <segue destination="Gym-zw-k4A" kind="embed" id="nmM-BV-piS"/>
                                 </connections>
@@ -109,7 +107,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2CM-0A-Xvp" id="aRT-jM-VXY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Aj-76-r0c">
@@ -277,7 +275,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc8-aj-DL7">
-                                <rect key="frame" x="20" y="40" width="335" height="44"/>
+                                <rect key="frame" x="20" y="20" width="335" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="joq-P5-PQr"/>
                                 </constraints>
@@ -290,14 +288,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_share" translatesAutoresizingMaskIntoConstraints="NO" id="3BZ-G8-bcO">
-                                <rect key="frame" x="28" y="47" width="30" height="30"/>
+                                <rect key="frame" x="28" y="27" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="TQd-xe-gB4"/>
                                     <constraint firstAttribute="height" constant="30" id="stJ-3b-nA7"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avM-yV-rKf">
-                                <rect key="frame" x="20" y="103" width="335" height="44"/>
+                                <rect key="frame" x="20" y="83" width="335" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="O7s-iK-dpN"/>
                                 </constraints>
@@ -310,7 +308,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_rate" translatesAutoresizingMaskIntoConstraints="NO" id="jij-xR-JlP">
-                                <rect key="frame" x="28" y="110" width="30" height="30"/>
+                                <rect key="frame" x="28" y="90" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="7X1-uD-L9W"/>
                                     <constraint firstAttribute="height" constant="30" id="CPC-0S-6aI"/>
@@ -392,7 +390,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OQ-PX-Oil">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -400,7 +398,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fST-lc-o8e">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Privacy Policy" id="G3t-3d-QX5">
                                         <barButtonItem key="rightBarButtonItem" title="Accept" id="Mv5-40-DWF">
@@ -663,15 +661,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button-play" width="192" height="192"/>
+        <image name="button-play" width="64" height="64"/>
         <image name="fader_bg" width="305" height="42"/>
         <image name="ic_share" width="96" height="96"/>
         <image name="ic_star_rate" width="72" height="72"/>
-        <image name="icon-isNoFavorite" width="96" height="96"/>
-        <image name="icon-settings" width="96" height="96"/>
-        <image name="icon-sttaions" width="96" height="96"/>
-        <image name="placeholder" width="172" height="172"/>
-        <image name="shoutcast" width="595" height="178"/>
-        <image name="speaker" width="96" height="96"/>
+        <image name="icon-isNoFavorite" width="32" height="32"/>
+        <image name="icon-settings" width="32" height="32"/>
+        <image name="icon-sttaions" width="32" height="32"/>
+        <image name="placeholder" width="57.333332061767578" height="57.333332061767578"/>
+        <image name="shoutcast" width="198.33332824707031" height="59.333332061767578"/>
+        <image name="speaker" width="32" height="32"/>
     </resources>
 </document>

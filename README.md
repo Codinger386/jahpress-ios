@@ -24,3 +24,11 @@ This app is available in the app store: https://apps.apple.com/us/app/jahpress/i
 For more information check: https://firebase.google.com/docs/ios/setup and https://github.com/muhku/FreeStreamer
 
 This project requires a Shoutcast API key which needs to be added in JahPress.xcconfig.
+
+
+### TODO ###
+
+* Firebase Analytics
+* Crash Lytics
+* Sounds sortieren
+* Eigene Sounds

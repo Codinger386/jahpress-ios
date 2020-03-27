@@ -9,9 +9,8 @@
 import UIKit
 import AVFoundation
 
-import FBSDKCoreKit
 import GoogleMobileAds
-import FirebaseCore
+//import FirebaseCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, AppDependencyInjectable {
@@ -36,15 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDependencyInjectable {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
 
-        GADMobileAds.configure(withApplicationID: BuildConfiguration.adMobAppId)
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         if BuildConfiguration.environemt == .prod {
 
-            // Init FB SDK
-            ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-
             // Init FireBase
-            FirebaseApp.configure()
+            //FirebaseApp.configure()
         }
 
         do {
@@ -79,12 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDependencyInjectable {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        if BuildConfiguration.environemt == .prod {
-            let sourceApplication: String? = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String
-            return ApplicationDelegate.shared.application(app, open: url, sourceApplication: sourceApplication, annotation: nil)
-        } else {
-            return true
-        }
+        return true
     }
 
     private func setUpAppearance() {

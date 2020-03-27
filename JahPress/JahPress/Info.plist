@@ -6,8 +6,6 @@
 	<string>$(AD_MOB_APP_ID)</string>
 	<key>AD_MOB_BANNER_ID</key>
 	<string>$(AD_MOB_BANNER_ID)</string>
-	<key>APPS_FLYER_ID</key>
-	<string>$(APPS_FLYER_ID)</string>
 	<key>APP_STORE_ID</key>
 	<string>$(APP_STORE_ID)</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -41,10 +39,6 @@
 	<string>$(ENVIRONMENT)</string>
 	<key>FIRE_BASE_ID</key>
 	<string>$(FIRE_BASE_ID)</string>
-	<key>FacebookAppID</key>
-	<string>$(FACEBOOK_APP_ID)</string>
-	<key>FacebookDisplayName</key>
-	<string>JahPress</string>
 	<key>LOG_DESTINATIONS</key>
 	<string>$(LOG_DESTINATIONS)</string>
 	<key>LOG_LEVEL</key>
