@@ -52,7 +52,7 @@ class FloatingLabel: UIView {
 
     func setupUI() {
         label = UILabel(frame: self.bounds)
-        label.textColor = UIColor.black
+        label.textColor = UIColor.white
         label.font = UIFont.systemFont(ofSize: 14)
         self.addSubview(label)
         clipsToBounds = true

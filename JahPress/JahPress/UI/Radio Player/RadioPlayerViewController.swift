@@ -31,6 +31,7 @@ class RadioPlayerViewController: UIViewController, AppDependencyInjectable {
         self.coverImageView.image = UIImage(named: "placeholder")
 
         self.stationLabel.text = "select a radio station to listen to"
+        self.stationLabel.textColor = .white
         self.songFloatingLabel.text = ""
 
         SwiftEventBus.onMainThread(self, name: EventIdentifiers.StationSelected) { result in
@@ -138,8 +139,6 @@ extension RadioPlayerViewController: RadioPlayerDelegate {
     }
 
     func radioPlayer(player: RadioPlayer, didReceiveMetaData metaData: RadioPlayerMetaData) {
-
-
 
         switch (metaData.artist, metaData.song) {
         case (let artist, let song) where artist != nil && artist != "" && song != nil && song != "":

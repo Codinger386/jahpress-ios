@@ -25,7 +25,7 @@ class StationsViewController: UIViewController, AppDependencyInjectable {
 
     override func viewDidLoad() {
         tableView.backgroundView = UIView(frame: CGRect.zero)
-        tableView.backgroundColor = UIColor.clear
+        tableView.backgroundColor = UIColor.black
     }
 
     override func viewDidAppear(_ animated: Bool) {
