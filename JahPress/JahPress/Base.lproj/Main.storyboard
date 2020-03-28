@@ -136,7 +136,8 @@
                                                         <constraint firstAttribute="width" constant="33.670000000000002" id="KXa-CO-Rvm"/>
                                                         <constraint firstAttribute="height" constant="33.670000000000002" id="uN2-8U-xCM"/>
                                                     </constraints>
-                                                    <state key="normal" image="icon-isNoFavorite"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="baseline_favorite_border_black_24pt"/>
                                                     <connections>
                                                         <action selector="favoriteButtonPressed:" destination="2CM-0A-Xvp" eventType="touchUpInside" id="lsh-lU-ZTc"/>
                                                     </connections>
@@ -154,6 +155,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="QzY-H9-DnL" firstAttribute="leading" secondItem="Rzc-Fk-uiN" secondAttribute="trailing" constant="8.5" id="2Kh-Yr-4Wp"/>
                                                 <constraint firstItem="RQd-Qb-YkV" firstAttribute="top" secondItem="aRT-jM-VXY" secondAttribute="top" constant="5" id="8zD-l1-yzV"/>
@@ -466,25 +468,27 @@
                                             <constraint firstAttribute="height" constant="37" id="07a-fW-dOO"/>
                                         </constraints>
                                     </pageControl>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTv-qL-Coy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTv-qL-Coy">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="179"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.01" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="QDp-lB-ttS"/>
                                         </constraints>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="baseline_volume_off_black_36pt"/>
                                         <connections>
                                             <action selector="muteFXOff:" destination="3bt-Ol-hnb" eventType="touchUpInside" id="v8h-bj-8Gv"/>
                                             <action selector="muteFXOn:" destination="3bt-Ol-hnb" eventType="touchDown" id="9T5-5u-4ic"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74q-MQ-1oE">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74q-MQ-1oE">
                                         <rect key="frame" x="315" y="0.0" width="60" height="179"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.01" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="dPq-cm-aSe"/>
                                         </constraints>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="baseline_volume_off_black_36pt"/>
                                         <connections>
                                             <action selector="muteMusicOff:" destination="3bt-Ol-hnb" eventType="touchUpInside" id="HQX-b6-sgp"/>
                                             <action selector="muteMusicOn:" destination="3bt-Ol-hnb" eventType="touchDown" id="uMf-9h-gqM"/>
@@ -563,7 +567,8 @@
                                     <constraint firstAttribute="width" constant="44" id="ceg-dm-l2h"/>
                                     <constraint firstAttribute="height" constant="44" id="gAc-m9-IEL"/>
                                 </constraints>
-                                <state key="normal" image="button-play"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="baseline_play_arrow_black_48pt"/>
                                 <connections>
                                     <action selector="playButton:" destination="qZb-da-tKf" eventType="touchUpInside" id="MnJ-0D-HuU"/>
                                 </connections>
@@ -648,13 +653,14 @@
     </scenes>
     <resources>
         <image name="baseline_apps_black_24pt" width="24" height="24"/>
+        <image name="baseline_favorite_border_black_24pt" width="24" height="24"/>
+        <image name="baseline_play_arrow_black_48pt" width="48" height="48"/>
         <image name="baseline_radio_black_24pt" width="24" height="24"/>
         <image name="baseline_settings_black_24pt" width="24" height="24"/>
         <image name="baseline_share_black_24pt" width="24" height="24"/>
         <image name="baseline_star_black_24pt" width="24" height="24"/>
-        <image name="button-play" width="64" height="64"/>
+        <image name="baseline_volume_off_black_36pt" width="36" height="36"/>
         <image name="fader_bg" width="305" height="42"/>
-        <image name="icon-isNoFavorite" width="32" height="32"/>
         <image name="placeholder" width="57.333332061767578" height="57.333332061767578"/>
         <image name="shoutcast" width="198.33332824707031" height="59.333332061767578"/>
     </resources>

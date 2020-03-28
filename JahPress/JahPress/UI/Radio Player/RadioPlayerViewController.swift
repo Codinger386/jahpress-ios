@@ -122,11 +122,11 @@ extension RadioPlayerViewController: RadioPlayerDelegate {
             playButton.stopFlashing()
         case .playing:
             playButton.isEnabled = true
-            playButton.setImage(UIImage(named: "button-pause"), for: .normal)
+            playButton.setImage(UIImage(named: "baseline_pause_black_48pt"), for: .normal)
             playButton.startFlashing(withInterval: 1)
         case .paused:
             playButton.isEnabled = true
-            playButton.setImage(UIImage(named: "button-play"), for: .normal)
+            playButton.setImage(UIImage(named: "baseline_play_arrow_black_48pt"), for: .normal)
             playButton.stopFlashing()
         case .stopped:
             playButton.isEnabled = false
