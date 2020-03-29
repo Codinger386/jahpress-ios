@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41C25F8B242E59B9004851FE /* FreeStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C25F86242E59B9004851FE /* FreeStreamer.framework */; };
-		41C25F8C242E59B9004851FE /* FreeStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C25F86242E59B9004851FE /* FreeStreamer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4114928E24307A950027DBE5 /* FreeStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4114927E24307A310027DBE5 /* FreeStreamer.framework */; };
+		4114928F24307A950027DBE5 /* FreeStreamer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4114927E24307A310027DBE5 /* FreeStreamer.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4114929124307A970027DBE5 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4114927F24307A310027DBE5 /* GoogleAppMeasurement.framework */; };
+		4114929324307A980027DBE5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4114928024307A310027DBE5 /* GoogleMobileAds.framework */; };
+		4114929524307A9A0027DBE5 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4114928124307A310027DBE5 /* GoogleUtilities.framework */; };
+		4114929724307A9C0027DBE5 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4114928224307A310027DBE5 /* nanopb.framework */; };
+		4114929A24307C200027DBE5 /* UIViewController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114929924307C200027DBE5 /* UIViewController+StatusBar.swift */; };
 		41DA057E242E4C6800240840 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 41DA057D242E4C6800240840 /* PromiseKit */; };
 		41DA0581242E4CDE00240840 /* Anchorage in Frameworks */ = {isa = PBXBuildFile; productRef = 41DA0580242E4CDE00240840 /* Anchorage */; };
 		41DA0587242E4D4F00240840 /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 41DA0586242E4D4F00240840 /* ObjcExceptionBridging */; };
 		41DA0589242E4D4F00240840 /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 41DA0588242E4D4F00240840 /* XCGLogger */; };
 		41DA058C242E4EF500240840 /* SwiftEventBus in Frameworks */ = {isa = PBXBuildFile; productRef = 41DA058B242E4EF500240840 /* SwiftEventBus */; };
-		41E42930242E61E800967E2B /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C25F87242E59B9004851FE /* GoogleAppMeasurement.framework */; };
-		41E42932242E61E900967E2B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C25F88242E59B9004851FE /* GoogleMobileAds.framework */; };
-		41E42934242E61E900967E2B /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C25F89242E59B9004851FE /* GoogleUtilities.framework */; };
-		41E42936242E61E900967E2B /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C25F8A242E59B9004851FE /* nanopb.framework */; };
 		B509260F200234B6001E1EC5 /* JahAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509260E200234B6001E1EC5 /* JahAudioPlayer.swift */; };
 		B51374A82079220B00D0EC25 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B51374A72079220900D0EC25 /* .swiftlint.yml */; };
 		B5213FCF2192ACC400779AAE /* privacy_policy.html in Resources */ = {isa = PBXBuildFile; fileRef = B5213FCE2192ACC300779AAE /* privacy_policy.html */; };
@@ -74,13 +75,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		41C25F84242E58B7004851FE /* Embed Frameworks */ = {
+		4114929024307A950027DBE5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				41C25F8C242E59B9004851FE /* FreeStreamer.framework in Embed Frameworks */,
+				4114928F24307A950027DBE5 /* FreeStreamer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,13 +89,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4114927E24307A310027DBE5 /* FreeStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreeStreamer.framework; path = Frameworks/FreeStreamer.framework; sourceTree = "<group>"; };
+		4114927F24307A310027DBE5 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		4114928024307A310027DBE5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		4114928124307A310027DBE5 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		4114928224307A310027DBE5 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Frameworks/nanopb.framework; sourceTree = "<group>"; };
+		4114929924307C200027DBE5 /* UIViewController+StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StatusBar.swift"; sourceTree = "<group>"; };
 		419295DB2379A87700F9BCF4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		41C25F85242E59A1004851FE /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Frameworks; sourceTree = "<group>"; };
-		41C25F86242E59B9004851FE /* FreeStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreeStreamer.framework; path = Frameworks/FreeStreamer.framework; sourceTree = "<group>"; };
-		41C25F87242E59B9004851FE /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		41C25F88242E59B9004851FE /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		41C25F89242E59B9004851FE /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		41C25F8A242E59B9004851FE /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Frameworks/nanopb.framework; sourceTree = "<group>"; };
 		B50794522008A9E8008CF3F0 /* QA.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QA.xcconfig; sourceTree = "<group>"; };
 		B509260E200234B6001E1EC5 /* JahAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahAudioPlayer.swift; sourceTree = "<group>"; };
 		B51374A72079220900D0EC25 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -166,16 +167,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E42934242E61E900967E2B /* GoogleUtilities.framework in Frameworks */,
 				41DA0581242E4CDE00240840 /* Anchorage in Frameworks */,
-				41E42936242E61E900967E2B /* nanopb.framework in Frameworks */,
+				4114929324307A980027DBE5 /* GoogleMobileAds.framework in Frameworks */,
+				4114929724307A9C0027DBE5 /* nanopb.framework in Frameworks */,
+				4114929124307A970027DBE5 /* GoogleAppMeasurement.framework in Frameworks */,
+				4114928E24307A950027DBE5 /* FreeStreamer.framework in Frameworks */,
 				41DA058C242E4EF500240840 /* SwiftEventBus in Frameworks */,
-				41E42932242E61E900967E2B /* GoogleMobileAds.framework in Frameworks */,
 				41DA0587242E4D4F00240840 /* ObjcExceptionBridging in Frameworks */,
 				41DA057E242E4C6800240840 /* PromiseKit in Frameworks */,
-				41E42930242E61E800967E2B /* GoogleAppMeasurement.framework in Frameworks */,
+				4114929524307A9A0027DBE5 /* GoogleUtilities.framework in Frameworks */,
 				41DA0589242E4D4F00240840 /* XCGLogger in Frameworks */,
-				41C25F8B242E59B9004851FE /* FreeStreamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +250,7 @@
 				B58C0D221FEE862D0031BC88 /* Dictionary+KeypathExtension.swift */,
 				B58C0D101FEE85A40031BC88 /* String+Extensions.swift */,
 				B579103A1FF66983007F4C7B /* UIImage+Extensions.swift */,
+				4114929924307C200027DBE5 /* UIViewController+StatusBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,11 +286,6 @@
 		B5A48F421FDE7BB70052C6A1 = {
 			isa = PBXGroup;
 			children = (
-				41C25F86242E59B9004851FE /* FreeStreamer.framework */,
-				41C25F87242E59B9004851FE /* GoogleAppMeasurement.framework */,
-				41C25F88242E59B9004851FE /* GoogleMobileAds.framework */,
-				41C25F89242E59B9004851FE /* GoogleUtilities.framework */,
-				41C25F8A242E59B9004851FE /* nanopb.framework */,
 				419295DB2379A87700F9BCF4 /* README.md */,
 				B51374A72079220900D0EC25 /* .swiftlint.yml */,
 				B5AAF7161FEFC89200C3504E /* TODOs.rtf */,
@@ -296,7 +293,11 @@
 				B5DB5FA41FE6C03C003E28FF /* Scripts */,
 				B5A48F4D1FDE7BB70052C6A1 /* JahPress */,
 				B5A48F4C1FDE7BB70052C6A1 /* Products */,
-				41C25F85242E59A1004851FE /* Frameworks */,
+				4114927E24307A310027DBE5 /* FreeStreamer.framework */,
+				4114927F24307A310027DBE5 /* GoogleAppMeasurement.framework */,
+				4114928024307A310027DBE5 /* GoogleMobileAds.framework */,
+				4114928124307A310027DBE5 /* GoogleUtilities.framework */,
+				4114928224307A310027DBE5 /* nanopb.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -471,7 +472,7 @@
 				B5A48F481FDE7BB70052C6A1 /* Frameworks */,
 				B5A48F491FDE7BB70052C6A1 /* Resources */,
 				B5E1C4F620221C5C003F71C5 /* Remove Unsupported Architectures from Archives */,
-				41C25F84242E58B7004851FE /* Embed Frameworks */,
+				4114929024307A950027DBE5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -626,6 +627,7 @@
 				B5AAF71C1FEFE8A300C3504E /* UIColor+Additions.swift in Sources */,
 				B58C0D241FEE862D0031BC88 /* Dictionary+KeypathExtension.swift in Sources */,
 				B5FF42821FF1188100F8AEDC /* TabBarController.swift in Sources */,
+				4114929A24307C200027DBE5 /* UIViewController+StatusBar.swift in Sources */,
 				B5FF42781FF0CE0F00F8AEDC /* StationCell.swift in Sources */,
 				B59FD8D7218F34120085EFBD /* PrivacyPolicyViewController.swift in Sources */,
 				B58C0D2E1FEE88840031BC88 /* FormattingExtensions.swift in Sources */,

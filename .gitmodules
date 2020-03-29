@@ -1,0 +1,3 @@
+[submodule "JahSounds"]
+	path = JahSounds
+	url = git@bitbucket.org:k_hymon_bitingbit/jahpress-sounds.git
