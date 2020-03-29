@@ -55,7 +55,7 @@ struct BuildConfiguration {
 	static let logShowThread = BuildConfiguration.dictionary["LOG_SHOW_THREAD"] as? String == "1"
 	static let logShowDate = BuildConfiguration.dictionary["LOG_SHOW_DATE"] as? String == "1"
 	static let logShowPictogram = BuildConfiguration.dictionary["LOG_SHOW_PICTOGRAM"] as? String == "1"
-    
+
     static let shoutcastAPIKey = BuildConfiguration.dictionary["SHOUTCAST_API"] as! String
 
     static let appStoreID: String = BuildConfiguration.dictionary["APP_STORE_ID"] as! String

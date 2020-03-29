@@ -80,8 +80,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDependencyInjectable {
 
     private func setUpAppearance() {
 
-        UIView.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = UIColor.black
-
         UITabBar.appearance().backgroundImage = UIImage(color: UIColor.black)
         UITabBar.appearance().shadowImage = UIImage(color: UIColor.black, size: CGSize(width: 1000, height: 0.25))
         UITabBar.appearance().isTranslucent = true
@@ -89,15 +87,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppDependencyInjectable {
         UITabBar.appearance().unselectedItemTintColor = UIColor(white: 1, alpha: 0.4)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.white], for: .normal)
 
-        UISearchBar.appearance().backgroundColor = UIColor.clear
-        UISearchBar.appearance().tintColor = UIColor.clear
-        UISearchBar.appearance().isTranslucent = true
-        UISearchBar.appearance().backgroundImage = UIImage(color: UIColor.clear)
+        if #available(iOS 13, *) {
+
+        } else {
+            UIView.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = UIColor.black
+            UISearchBar.appearance().backgroundColor = UIColor.clear
+            UISearchBar.appearance().tintColor = UIColor.clear
+            UISearchBar.appearance().isTranslucent = true
+            UISearchBar.appearance().backgroundImage = UIImage(color: UIColor.clear)
+        }
     }
 }
 
 
 // Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromAVAudioSessionMode(_ input: AVAudioSession.Mode) -> String {
+private func convertFromAVAudioSessionMode(_ input: AVAudioSession.Mode) -> String {
 	return input.rawValue
 }

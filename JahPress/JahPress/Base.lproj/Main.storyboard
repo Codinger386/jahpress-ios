@@ -192,11 +192,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIk-OV-TOj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lbj-Zd-lW9">
+                                    <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbj-Zd-lW9">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="EoP-fm-fNJ"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="FDC-3B-FH6" id="rS8-AP-kQD"/>
@@ -211,6 +213,7 @@
                                     </view>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p61-LL-s8d">
                                         <rect key="frame" x="20" y="57.5" width="335" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="27" id="rYm-Oo-JOi"/>
                                         </constraints>

@@ -18,7 +18,7 @@ class SettingsViewController: UIViewController, AppDependencyInjectable {
 
     @IBAction func shareButton(_ sender: Any) {
         // https://itunes.apple.com/app/jahpress/id1334640352?mt=8
-        guard let url = URL(string : "https://itunes.apple.com/app/id" + BuildConfiguration.appStoreID + "?mt=8") else {
+        guard let url = URL(string: "https://itunes.apple.com/app/id" + BuildConfiguration.appStoreID + "?mt=8") else {
             return
         }
 
@@ -30,7 +30,7 @@ class SettingsViewController: UIViewController, AppDependencyInjectable {
     }
 
     @IBAction func rateButton(_ sender: Any) {
-        guard let url = URL(string : "itms-apps://itunes.apple.com/app/id" + BuildConfiguration.appStoreID + "?mt=8") else {
+        guard let url = URL(string: "itms-apps://itunes.apple.com/app/id" + BuildConfiguration.appStoreID + "?mt=8") else {
             return
         }
         UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
@@ -52,6 +52,6 @@ class SettingsViewController: UIViewController, AppDependencyInjectable {
 }
 
 // Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+private func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
 	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

@@ -467,7 +467,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A48F731FDE7BB70052C6A1 /* Build configuration list for PBXNativeTarget "JahPress" */;
 			buildPhases = (
-				B5B3A67C1FE1266E008A1236 /* ShellScript */,
+				B5B3A67C1FE1266E008A1236 /* Run Swiftlint */,
 				B5A48F471FDE7BB70052C6A1 /* Sources */,
 				B5A48F481FDE7BB70052C6A1 /* Frameworks */,
 				B5A48F491FDE7BB70052C6A1 /* Resources */,
@@ -562,18 +562,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B5B3A67C1FE1266E008A1236 /* ShellScript */ = {
+		B5B3A67C1FE1266E008A1236 /* Run Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Swiftlint";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Scripts/runlinter.sh\n";
+			shellScript = "swiftlintBinary=/usr/local/bin/swiftlint\nif [ ! -e \"$swiftlintBinary\" ]\nthen\nswiftlintBinary=$(which swiftlint)\nif [ ! -e \"$swiftlintBinary\" ]\nthen\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\nfi\n${swiftlintBinary} autocorrect\n";
 		};
 		B5E1C4F620221C5C003F71C5 /* Remove Unsupported Architectures from Archives */ = {
 			isa = PBXShellScriptBuildPhase;

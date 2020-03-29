@@ -29,7 +29,7 @@ struct WeakRefArray<T: AnyObject> {
 
     mutating func remove(element: T) {
         cleanup()
-        if let index = _elements.index (where: { weakRef -> Bool in
+        if let index = _elements.index(where: { weakRef -> Bool in
             return weakRef.value === element
             }) {
             _elements.remove(at: index)

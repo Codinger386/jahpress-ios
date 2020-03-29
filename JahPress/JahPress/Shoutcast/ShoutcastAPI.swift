@@ -36,7 +36,7 @@ class ShoutcastAPI {
             lastUpdateDate > Date().addingTimeInterval(-cacheLifeTimeInSeconds) {
             return Promise.value(stationList)
         }
-        
+
         let apiKey = BuildConfiguration.shoutcastAPIKey
 
         return networkService.get(from: "http://api.shoutcast.com/legacy/genresearch", data: ["k": apiKey, "genre": "reggae"]).then { data -> Promise<StationList> in
