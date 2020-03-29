@@ -138,7 +138,7 @@ extension StationsViewController: UITableViewDataSource, UITableViewDelegate {
         cell.genreLabel.text = station.displayGenres.joined(separator: " | ")
         cell.listenersLabel.text = station.listenerCount > 0 ? "\(station.listenerCount) listeners" : "currently no listeners"
         cell.coverImageView.image = UIImage(named: "placeholder")
-        cell.favoriteButton.setImage(station.isFavorite ? UIImage(named: "baseline_favorite_black_48pt") : UIImage(named: "baseline_favorite_border_black_24pt"), for: .normal)
+        cell.favoriteButton.setImage(station.isFavorite ? UIImage(named: "baseline_favorite_black_24pt") : UIImage(named: "baseline_favorite_border_black_24pt"), for: .normal)
 
         if !tableView.isDragging && !tableView.isDecelerating {
             loadCover(forIndexPath: indexPath)

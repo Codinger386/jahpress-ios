@@ -43,14 +43,6 @@ class EffectViewController: UIViewController, AppDependencyInjectable {
 
         crossFader.setThumbImage(UIImage(named: "Crossfader"), for: .normal)
 
-        let fxImage = UIImage(named: "speaker")
-        muteFXButton.setImage(fxImage, for: .normal)
-        muteFXButton.tintColor = UIColor.white
-
-        let musicImage = UIImage(named: "icon-sttaions")
-        muteMusicButton.setImage(musicImage, for: .normal)
-        muteMusicButton.tintColor = UIColor.white
-
         pageControl.numberOfPages = 0
     }
 
