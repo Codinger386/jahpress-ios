@@ -1,6 +1,6 @@
 # README #
 
-This app is available in the app store: https://apps.apple.com/us/app/jahpress/id1444504931.
+This app is currently NOT available on the app store anymore, sorry :-/ Need to find time to update the code (former url https://apps.apple.com/us/app/jahpress/id1444504931).
 
 ### Project Setup ###
 
